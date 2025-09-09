@@ -59,7 +59,7 @@ public class EmployeeBean extends BaseBean {
 	@Override
 	public String getValue() {
 		// TODO Auto-generated method stub
-		return fullName + "";
+		return userName + "";
 	}
 	
 }

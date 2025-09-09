@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.rays.pro4.Bean.BaseBean;
 import com.rays.pro4.Bean.EmployeeBean;
+import com.rays.pro4.Exception.ApplicationException;
 import com.rays.pro4.Model.EmployeeModel;
 import com.rays.pro4.Util.DataUtility;
 import com.rays.pro4.Util.PropertyReader;
@@ -18,7 +19,26 @@ import com.rays.pro4.Util.ServletUtility;
 
 @WebServlet(name = "EmployeeListCtl" , urlPatterns = {"/ctl/EmployeeListCtl"})
 public class EmployeeListCtl extends BaseCtl {
+   
+      @Override
+    protected void preload(HttpServletRequest request) {
+    	// TODO Auto-generated method stub
+    	 
+    	  EmployeeModel emodel = new EmployeeModel();
+    	  
+    		try {
+    			List elist = emodel.list();
 
+    			request.setAttribute("userName", elist);
+
+    		} catch (ApplicationException e) {
+    			e.printStackTrace();
+    		} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+    
+    }
 	
 	@Override
 	protected BaseBean populateBean(HttpServletRequest request) {
@@ -26,6 +46,7 @@ public class EmployeeListCtl extends BaseCtl {
 		bean.setFullName(DataUtility.getString(request.getParameter("fullName")));
 		bean.setBirthDate(DataUtility.getDate(request.getParameter("birthDate")));
 		bean.setUserName(DataUtility.getString(request.getParameter("userName")));
+		bean.setId(DataUtility.getInt(request.getParameter("id")));
 		return bean;
 	}
 
