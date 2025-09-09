@@ -135,7 +135,7 @@ public class EmployeeCtl extends BaseCtl {
 					long pk = model.add(bean);
 					ServletUtility.setBean(bean, request);
 					ServletUtility.setSuccessMessage("Data is successfully Added", request);
-					bean.setId(pk);
+					
 				} catch (ApplicationException e) {
 					System.out.println("Data not added");
 					e.printStackTrace();
