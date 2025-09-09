@@ -142,7 +142,7 @@ public class EmployeeCtl extends BaseCtl {
 				} catch (DuplicateRecordException e) {
 					System.out.println(" U ctl D post 4444444");
 					ServletUtility.setBean(bean, request);
-					ServletUtility.setErrorMessage("UserName already exists", request);
+					ServletUtility.setErrorMessage("Email already exists", request);
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

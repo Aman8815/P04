@@ -87,9 +87,9 @@
 					<td style="position: fixed;"><font color="red"> <%=ServletUtility.getErrorMessage("fullName", request)%></font></td>
 				</tr>
 				<tr>
-					<th>User Name:</th>
+					<th>Email:</th>
 					<td><input type="text" name="userName"
-						placeholder="Enter User Name"
+						placeholder="Enter Email"
 						value="<%=DataUtility.getStringData(bean.getUserName())%>"></td>
 					<td style="position: fixed;"><font color="red"> <%=ServletUtility.getErrorMessage("userName", request)%></font></td>
 				</tr>
