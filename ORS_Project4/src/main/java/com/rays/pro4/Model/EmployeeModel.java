@@ -43,11 +43,6 @@ public class EmployeeModel {
 	public long add(EmployeeBean bean) throws Exception {
 		log.debug("Model add Started");
 
-		EmployeeBean existBean = findByFullName(bean.getFullName());
-
-		if (existBean != null) {
-			throw new DuplicateRecordException("FullName already exist..!!");
-		}
 
 		EmployeeBean existbean1 = findByUserName(bean.getUserName());
 

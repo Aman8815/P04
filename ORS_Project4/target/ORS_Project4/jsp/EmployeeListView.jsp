@@ -57,6 +57,8 @@
 
 			<%
 				int next = DataUtility.getInt(request.getAttribute("nextListSize").toString());
+			
+			     
 			%>
 
 
@@ -66,6 +68,9 @@
 				int index = ((pageNo - 1) * pageSize) + 1;
 
 				List list = ServletUtility.getList(request);
+				
+			List elist = (List)request.getAttribute("userName");
+				
 				Iterator<EmployeeBean> it = list.iterator();
 
 				if (list.size() != 0) {
@@ -82,9 +87,8 @@
 					<input type="text" name="birthDate" id="udate" placeholder="Enter Birthdate"
 						value="<%=ServletUtility.getParameter("birthDate", request)%>">
 						
-						<label>UserName</label>
-					<input type="text" name="userName"  placeholder="Enter UserName"
-						value="<%=ServletUtility.getParameter("userName", request)%>">
+						<label>Email</label>
+					<%= HTMLUtility.getList("id", bean.getUserName(), elist) %>
 						
 						
 					<input type="submit" name="operation"
@@ -104,8 +108,7 @@
 
 					<th>S.No.</th>
 					<th>FullName</th>
-					<th>UserName</th>
-					<th>Password</th>
+					<th>Email</th>
 					<th>BirthDate</th>
 					<th>Contact Number</th>
 					<th>Edit</th>
@@ -123,7 +126,6 @@
 					<td><%=index++%></td>
 					<td><%=bean.getFullName()%></td>
 					<td><%=bean.getUserName()%></td>
-					<td><%=bean.getPassword()%></td>
 					<td><%=bean.getBirthDate()%></td>
 					<td><%=bean.getContactNumber()%></td>
 					<td><a href="EmployeeCtl?id=<%=bean.getId()%>">Edit</a></td>
