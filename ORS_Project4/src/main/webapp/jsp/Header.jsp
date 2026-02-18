@@ -96,6 +96,10 @@
 					<a href="<%=ORSView.INVENTORY_CTL %>">add Inventory</a>|
 					<a href="<%=ORSView.INVENTORY_LIST_CTL %>">Inventory List</a>|
 					
+					<a href="<%=ORSView.LOAN_CTL %>">Add Loan</a>|
+					<a href="<%=ORSView.LOAN_LIST_CTL%>">Loan List</a>|
+					
+					
 					<a
 					target="blank" href="<%=ORSView.JAVA_DOC_VIEW%>">Java Doc</a> <%
  	}

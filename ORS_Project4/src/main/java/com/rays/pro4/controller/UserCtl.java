@@ -1,6 +1,7 @@
 package com.rays.pro4.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -50,7 +51,7 @@ public class UserCtl extends BaseCtl {
 			List l = model.list();
 			request.setAttribute("roleList", l);
 		} catch (ApplicationException e) {
-			log.error(e);
+			request.setAttribute("roleList", new ArrayList<>());
 		}
 	}
 
@@ -270,8 +271,7 @@ public class UserCtl extends BaseCtl {
 
 			} catch (ApplicationException e) {
 				log.error(e);
-				ServletUtility.handleException(e, request, response);
-				return;
+				ServletUtility.handleExceptionDB(getView(), request, response);
 			} catch (DuplicateRecordException e) {
 				System.out.println(" U ctl D post 4444444");
 				ServletUtility.setBean(bean, request);
@@ -288,8 +288,7 @@ public class UserCtl extends BaseCtl {
 				return;
 			} catch (ApplicationException e) {
 				log.error(e);
-				ServletUtility.handleException(e, request, response);
-				return;
+				ServletUtility.handleExceptionDB(getView(), request, response);
 			}
 
 		} else if (OP_CANCEL.equalsIgnoreCase(op)) {

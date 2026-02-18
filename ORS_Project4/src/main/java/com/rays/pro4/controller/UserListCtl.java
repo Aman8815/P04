@@ -1,6 +1,7 @@
 package com.rays.pro4.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -53,7 +54,9 @@ public class UserListCtl extends BaseCtl {
 			request.setAttribute("dOB", ulist);
 
 		} catch (ApplicationException e) {
-			e.printStackTrace();
+			request.setAttribute("RoleList", new ArrayList());
+			request.setAttribute("LoginId", new ArrayList());
+			request.setAttribute("dOB", new ArrayList());
 		}
 	}
 
@@ -124,9 +127,10 @@ public class UserListCtl extends BaseCtl {
 			ServletUtility.forward(getView(), request, response);
 
 		} catch (ApplicationException e) {
-			log.error(e);
-			ServletUtility.handleException(e, request, response);
-			return;
+//			log.error(e);
+//			ServletUtility.handleException(e, request, response);
+//			return;
+			ServletUtility.handleExceptionDBList(getView(), bean, pageNo, pageSize, request, response);
 		}
 		log.debug("UserListCtl doGet End");
 	}

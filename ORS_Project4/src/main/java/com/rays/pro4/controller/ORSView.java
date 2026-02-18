@@ -58,6 +58,9 @@ public interface ORSView {
     public String INVENTORY_VIEW = PAGE_FOLDER + "/Inventory.jsp";
     public String INVENTORY_lIST_VIEW = PAGE_FOLDER + "/InventoryList.jsp";
     
+    public String LOAN_VIEW = PAGE_FOLDER+ "/LoanView.jsp";
+    public String LOAN_LIST_VIEW = PAGE_FOLDER + "/LoanListView.jsp" ;
+    
     
     
     // public String ERROR_VIEW5 = PAGE_FOLDER + "/ErrorView5.jsp";
@@ -105,4 +108,9 @@ public interface ORSView {
     
     public String INVENTORY_CTL = APP_CONTEXT+"/ctl/InventoryCtl";
     public String INVENTORY_LIST_CTL = APP_CONTEXT+"/ctl/InventoryListCtl";
+    
+    public String LOAN_CTL = APP_CONTEXT + "/ctl/LoanCtl";
+    public String LOAN_LIST_CTL = APP_CONTEXT + "/ctl/LoanListCtl";
+
+	
 }

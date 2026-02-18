@@ -1,6 +1,7 @@
 package com.rays.pro4.Util;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 
@@ -330,4 +331,21 @@ public class ServletUtility {
 	public static int getPageSize(HttpServletRequest request) {
 		return (Integer) request.getAttribute("pageSize");
 	}
+	
+	public static void handleExceptionDB(String page, HttpServletRequest request, HttpServletResponse response)
+            throws IOException, ServletException {
+        setErrorMessage("DATABASE SERVER DOWN....!!", request);
+        forward(page, request, response);
+    }
+    
+    public static void handleExceptionDBList(String page, BaseBean bean, int pageNo, int pageSize, HttpServletRequest request, HttpServletResponse response)
+            throws IOException, ServletException {
+        setErrorMessage("DATABASE SERVER DOWN UNABLE TO LOAD LIST....!!", request);
+        setList(new ArrayList(), request);
+        setBean(bean, request);
+        request.setAttribute("pageNo", pageNo);
+		request.setAttribute("pageSize", pageSize);
+		request.setAttribute("nextlist", 0);
+        forward(page, request, response);
+    }
 }
