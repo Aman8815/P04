@@ -99,6 +99,9 @@
 					<a href="<%=ORSView.LOAN_CTL %>">Add Loan</a>|
 					<a href="<%=ORSView.LOAN_LIST_CTL%>">Loan List</a>|
 					
+					<a href="<%=ORSView.NOTIFICATION_CTL %>">Add Notification</a>|
+					<a href="<%=ORSView.NOTIFICATION_LIST_CTL %>">Notification List</a>|
+					
 					
 					<a
 					target="blank" href="<%=ORSView.JAVA_DOC_VIEW%>">Java Doc</a> <%
