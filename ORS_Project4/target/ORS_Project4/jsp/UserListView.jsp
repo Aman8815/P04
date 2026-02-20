@@ -62,7 +62,7 @@ A<%@page import="java.util.HashMap"%>
 
 				ulist = (List) request.getAttribute("dOB");
 
-				int next = DataUtility.getInt(request.getAttribute("nextlist").toString());
+				int next = DataUtility.getInt(request.getAttribute("nextListSize").toString());
 			%>
 
 

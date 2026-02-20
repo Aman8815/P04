@@ -114,7 +114,7 @@ public class UserListCtl extends BaseCtl {
 
 			nextList = model.search(bean, pageNo + 1, pageSize);
 
-			request.setAttribute("nextlist", nextList.size());
+			request.setAttribute("nextListSize", nextList.size());
 
 			if (list == null || list.size() == 0) {
 				ServletUtility.setErrorMessage("No record found ", request);

@@ -64,6 +64,9 @@ public interface ORSView {
     public String NOTIFICATION_VIEW = PAGE_FOLDER + "/NotificaionView.jsp";
     public String NOTIFICATION_LIST_VIEW = PAGE_FOLDER + "/NotificaionListView.jsp";
     
+    public String REPORT_VIEW = PAGE_FOLDER+ "/ReportView.jsp";
+    public String REPORT_LIST_VIEW = PAGE_FOLDER + "/ReportListView.jsp";
+    
     
     
     // public String ERROR_VIEW5 = PAGE_FOLDER + "/ErrorView5.jsp";
@@ -117,6 +120,9 @@ public interface ORSView {
     
     public String NOTIFICATION_LIST_CTL = APP_CONTEXT + "/ctl/NotifictionListCtl";
     public String NOTIFICATION_CTL = APP_CONTEXT + "/ctl/NotificationCtl";
+    
+    public String REPORT_CTL = APP_CONTEXT + "/ctl/ReportCtl";
+    public String REPORT_LIST_CTL = APP_CONTEXT + "/ctl/ReportListCtl";
 
 	
 }

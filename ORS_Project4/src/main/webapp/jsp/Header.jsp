@@ -102,6 +102,9 @@
 					<a href="<%=ORSView.NOTIFICATION_CTL %>">Add Notification</a>|
 					<a href="<%=ORSView.NOTIFICATION_LIST_CTL %>">Notification List</a>|
 					
+					<a href="<%=ORSView.REPORT_CTL %>">Add Report</a>|
+					<a href="<%=ORSView.REPORT_LIST_CTL %>">Report List</a>|
+					
 					
 					<a
 					target="blank" href="<%=ORSView.JAVA_DOC_VIEW%>">Java Doc</a> <%

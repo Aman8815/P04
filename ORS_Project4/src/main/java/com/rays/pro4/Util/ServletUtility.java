@@ -345,7 +345,7 @@ public class ServletUtility {
         setBean(bean, request);
         request.setAttribute("pageNo", pageNo);
 		request.setAttribute("pageSize", pageSize);
-		request.setAttribute("nextlist", 0);
+		request.setAttribute("nextListSize", 0);
         forward(page, request, response);
     }
 }
