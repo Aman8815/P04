@@ -67,6 +67,9 @@ public interface ORSView {
     public String REPORT_VIEW = PAGE_FOLDER+ "/ReportView.jsp";
     public String REPORT_LIST_VIEW = PAGE_FOLDER + "/ReportListView.jsp";
     
+    public String TRAINING_VIEW = PAGE_FOLDER + "/TrainingView.jsp";
+    public String TRAINING_LIST_VIEW = PAGE_FOLDER + "/TraininListView.jsp";
+    
     
     
     // public String ERROR_VIEW5 = PAGE_FOLDER + "/ErrorView5.jsp";
@@ -123,6 +126,9 @@ public interface ORSView {
     
     public String REPORT_CTL = APP_CONTEXT + "/ctl/ReportCtl";
     public String REPORT_LIST_CTL = APP_CONTEXT + "/ctl/ReportListCtl";
+    
+    public String TRAINING_CTL = APP_CONTEXT + "/ctl/TrainingCtl";
+    public String TRAINING_LIST_CTL = APP_CONTEXT + "/ctl/TrainingListCtl";
 
 	
 }
