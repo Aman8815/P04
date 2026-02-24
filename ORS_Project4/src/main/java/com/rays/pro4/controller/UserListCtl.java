@@ -204,7 +204,8 @@ public class UserListCtl extends BaseCtl {
 
 		} catch (ApplicationException e) {
 			log.error(e);
-			ServletUtility.handleException(e, request, response);
+			
+			ServletUtility.handleExceptionDBList(getView(), bean, pageNo, pageSize, request, response);
 			return;
 		}
 		if (list == null || list.size() == 0 && !OP_DELETE.equalsIgnoreCase(op)) {

@@ -93,7 +93,7 @@
 					
 					<a href="<%=ORSView.EMPLOYEE_CTL%>">Add Employee</a>|
 					<a href="<%=ORSView.EMPLOYEE_LIST_CTL%>">Employee List</a>|
-					<a href="<%=ORSView.INVENTORY_CTL %>">add Inventory</a>|
+			  <%-- <a href="<%=ORSView.INVENTORY_CTL %>">add Inventory</a>|
 					<a href="<%=ORSView.INVENTORY_LIST_CTL %>">Inventory List</a>|
 					
 					<a href="<%=ORSView.LOAN_CTL %>">Add Loan</a>|
@@ -106,7 +106,10 @@
 					<a href="<%=ORSView.REPORT_LIST_CTL %>">Report List</a>|
 					
 					<a href="<%=ORSView.TRAINING_CTL %>">Add Training</a>|
-					<a href="<%=ORSView.TRAINING_LIST_CTL %>">Training List</a>|
+					<a href="<%=ORSView.TRAINING_LIST_CTL %>">Training List</a>--%>	
+					
+					<a href="<%=ORSView.EVENT_CTL %>">Add Event</a>|
+					<a href="<%=ORSView.EVENT_LIST_CTL %>">Event List</a>|
 					
 					
 					<a

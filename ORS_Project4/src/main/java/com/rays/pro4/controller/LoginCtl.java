@@ -159,8 +159,9 @@ public class LoginCtl extends BaseCtl {
 				}
 
 			} catch (ApplicationException e) {
-				log.error(e);
-				ServletUtility.handleException(e, request, response);
+//				log.error(e);
+//				ServletUtility.handleException(e, request, response);
+				ServletUtility.handleExceptionDB(getView(), request, response);
 				return;
 			}
 		} /*

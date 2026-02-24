@@ -198,9 +198,10 @@ public class UserRegistrationCtl extends BaseCtl {
 				ServletUtility.forward(getView(), request, response);
 				return;
 			} catch (ApplicationException e) {
-				e.printStackTrace();
-				log.error(e);
-				ServletUtility.handleException(e, request, response);
+//				e.printStackTrace();
+//				log.error(e);
+//				ServletUtility.handleException(e, request, response);
+				ServletUtility.handleExceptionDB(getView(), request, response);
 				return;
 			} catch (DuplicateRecordException e) {
 				log.error(e);

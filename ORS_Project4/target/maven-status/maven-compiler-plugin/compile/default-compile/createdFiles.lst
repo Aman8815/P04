@@ -3,6 +3,7 @@ com\rays\pro4\Util\EmailUtility.class
 com\rays\pro4\Util\DataValidator.class
 com\rays\pro4\Util\EmailUtility$1.class
 com\rays\pro4\Bean\EmployeeBean.class
+com\rays\pro4\Model\TrainingModel.class
 com\rays\pro4\Bean\InventoryBean.class
 com\rays\pro4\controller\NotificationCtl.class
 com\rays\pro4\Model\InventoryModel.class
@@ -15,6 +16,7 @@ com\rays\pro4\Bean\CustomerBean.class
 com\rays\pro4\Bean\TestBean.class
 com\rays\pro4\Util\HTMLUtility.class
 com\rays\proj4\Test\FacultyTest.class
+com\rays\pro4\controller\EventListCtl.class
 com\rays\proj4\Test\RoleTest.class
 com\rays\pro4\Bean\ProductBean.class
 com\rays\pro4\controller\ORSView.class
@@ -38,6 +40,7 @@ com\rays\pro4\Bean\PatientBean.class
 com\rays\pro4\Bean\RoleBean.class
 com\rays\proj4\Test\StudentTest.class
 com\rays\pro4\controller\LoanCtl.class
+com\rays\pro4\controller\TrainingCtl.class
 com\rays\pro4\Model\PatientModel.class
 com\rays\proj4\Test\MarksheetTest.class
 com\rays\proj4\Test\UserTest.class
@@ -48,12 +51,15 @@ com\rays\proj4\Test\CountTest.class
 com\rays\pro4\Model\LoanModel.class
 com\rays\pro4\controller\ProductCtl.class
 com\rays\pro4\Model\EmployeeModel.class
+com\rays\pro4\Model\EventModel.class
 com\rays\pro4\controller\ChangePasswordCtl.class
 com\rays\pro4\Exception\RecordNotFoundException.class
+com\rays\pro4\controller\EventCtl.class
 com\rays\pro4\Bean\DropdownListBean.class
 com\rays\pro4\Bean\CollegeBean.class
 com\rays\proj4\Test\Coursetest.class
 com\rays\pro4\controller\TimeTableListCtl.class
+com\rays\pro4\Bean\EventBean.class
 com\rays\pro4\controller\NotifictionListCtl.class
 com\rays\pro4\Model\TimeTableModel.class
 com\rays\pro4\controller\BaseCtl.class
@@ -70,6 +76,7 @@ com\rays\pro4\Bean\NotificationBean.class
 com\rays\pro4\controller\ReportCtl.class
 com\rays\pro4\Exception\DuplicateRecordException.class
 com\rays\pro4\Model\FacultyModel.class
+com\rays\pro4\Bean\TrainingBean.class
 com\rays\pro4\Model\MarksheetModel.class
 com\rays\pro4\Bean\BaseBean.class
 com\rays\pro4\Bean\LoanBean.class
@@ -88,6 +95,7 @@ com\rays\pro4\Model\CustomerModel.class
 com\rays\pro4\Model\TestModel.class
 com\rays\pro4\controller\EmployeeCtl.class
 com\rays\pro4\Model\RoleModel.class
+com\rays\pro4\controller\TrainingListCtl.class
 com\rays\pro4\controller\InventoryCtl.class
 com\rays\pro4\controller\CourseListCtl.class
 com\rays\pro4\controller\ProductListCtl.class
