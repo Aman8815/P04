@@ -74,6 +74,9 @@ public interface ORSView {
     public String EVENT_VIEW = PAGE_FOLDER + "/EventView.jsp";
     public String EVENT_LIST_VIEW = PAGE_FOLDER + "/EventListView.jsp";
     
+    public String INTERVIEW_VIEW = PAGE_FOLDER + "/InterviewView.jsp";
+    public String INTERVIEW_LIST_VIEW = PAGE_FOLDER + "/InterviewListView.jsp";
+    
     
     
     // public String ERROR_VIEW5 = PAGE_FOLDER + "/ErrorView5.jsp";
@@ -137,6 +140,9 @@ public interface ORSView {
     
     public String EVENT_CTL = APP_CONTEXT + "/ctl/EventCtl";
     public String EVENT_LIST_CTL = APP_CONTEXT + "/ctl/EventListCtl";
+    
+    public String INTERVIEW_CTL = APP_CONTEXT + "/ctl/InterviewCtl";
+    public String INTERVIEW_LIST_CTL = APP_CONTEXT + "/ctl/InterviewListCtl";
 
 	
 }

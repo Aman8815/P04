@@ -111,6 +111,9 @@
 					<a href="<%=ORSView.EVENT_CTL %>">Add Event</a>|
 					<a href="<%=ORSView.EVENT_LIST_CTL %>">Event List</a>|
 					
+					<a href="<%=ORSView.INTERVIEW_CTL %>">Add InterView</a>|
+					<a href="<%=ORSView.INTERVIEW_LIST_CTL %>">InterView List</a>|
+					
 					
 					<a
 					target="blank" href="<%=ORSView.JAVA_DOC_VIEW%>">Java Doc</a> <%
