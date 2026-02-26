@@ -78,6 +78,10 @@ public interface ORSView {
     public String INTERVIEW_LIST_VIEW = PAGE_FOLDER + "/InterviewListView.jsp";
     
     
+    public String BOOKING_VIEW = PAGE_FOLDER + "/BookingView.jsp";
+    public String BOOKING_LIST_VIEW = PAGE_FOLDER + "/BookingListView.jsp";
+    
+    
     
     // public String ERROR_VIEW5 = PAGE_FOLDER + "/ErrorView5.jsp";
 
@@ -143,6 +147,9 @@ public interface ORSView {
     
     public String INTERVIEW_CTL = APP_CONTEXT + "/ctl/InterviewCtl";
     public String INTERVIEW_LIST_CTL = APP_CONTEXT + "/ctl/InterviewListCtl";
+    
+    public String BOOKING_CTL = APP_CONTEXT + "/ctl/BookingCtl";
+    public String BOOKING_LIST_CTL = APP_CONTEXT + "/ctl/BookingListCtl";
 
 	
 }

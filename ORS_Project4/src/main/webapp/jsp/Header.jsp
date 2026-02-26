@@ -114,6 +114,9 @@
 					<a href="<%=ORSView.INTERVIEW_CTL %>">Add InterView</a>|
 					<a href="<%=ORSView.INTERVIEW_LIST_CTL %>">InterView List</a>|
 					
+					<a href="<%=ORSView.BOOKING_CTL %>">Add Booking</a>|
+					<a href="<%=ORSView.BOOKING_LIST_CTL %>">Booking List</a>|
+					
 					
 					<a
 					target="blank" href="<%=ORSView.JAVA_DOC_VIEW%>">Java Doc</a> <%
