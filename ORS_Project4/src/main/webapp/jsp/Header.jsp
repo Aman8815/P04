@@ -117,6 +117,9 @@
 					<a href="<%=ORSView.BOOKING_CTL %>">Add Booking</a>|
 					<a href="<%=ORSView.BOOKING_LIST_CTL %>">Booking List</a>|
 					
+					<a href="<%=ORSView.GYM_CTL %>">Add GymMember</a>|
+					<a href="<%=ORSView.GYM_LIST_CTL %>">GymMember List</a>|
+					
 					
 					<a
 					target="blank" href="<%=ORSView.JAVA_DOC_VIEW%>">Java Doc</a> <%

@@ -81,6 +81,9 @@ public interface ORSView {
     public String BOOKING_VIEW = PAGE_FOLDER + "/BookingView.jsp";
     public String BOOKING_LIST_VIEW = PAGE_FOLDER + "/BookingListView.jsp";
     
+    public String GYM_VIEW = PAGE_FOLDER + "/GymView.jsp";
+    public String GYM_LIST_VIEW = PAGE_FOLDER +"/GymListView.jsp";
+    
     
     
     // public String ERROR_VIEW5 = PAGE_FOLDER + "/ErrorView5.jsp";
@@ -150,6 +153,9 @@ public interface ORSView {
     
     public String BOOKING_CTL = APP_CONTEXT + "/ctl/BookingCtl";
     public String BOOKING_LIST_CTL = APP_CONTEXT + "/ctl/BookingListCtl";
+    
+    public String GYM_CTL = APP_CONTEXT + "/ctl/GymCtl";
+    public String GYM_LIST_CTL = APP_CONTEXT + "/ctl/GymListCtl";
 
 	
 }
